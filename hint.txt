@@ -6,3 +6,17 @@ source ./virtual/bin/activate
 
 pip install -r requirements.txt
 pip freeze > requirements.txt (Run this after u install new packages) 
+
+
+## Deep learning 黃金語法
+%matplotlib inline
+from matplotlib import pylot as plt 
+import numpy as np 
+
+import torch
+import torch.nn as nn ##用於建構神經網絡的核心模組（完全連階層、卷積層、激活函數、損失函數）
+import torch.nn.functional as F 
+import torch.optim as optim
+
+torch.set_printoptions(edgeitems=2)
+torch.manual_seed(123)
